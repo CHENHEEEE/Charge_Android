@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.he.charge.Activities.PayActivity">
+
+    <include layout="@layout/top"
+        android:id="@+id/include"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="输入金额"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/include"
+        android:layout_margin="16dp"
+        android:textSize="24sp"/>
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_below="@+id/textView">
+
+       <Button
+           android:id="@+id/button_50"
+           android:layout_width="70dp"
+           android:layout_height="45dp"
+           android:text="50.00"
+           android:background="@drawable/shape_blueborder"/>
+
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="match_parent"
+           android:background="#FFFFFF"/>
+
+       <Button
+           android:id="@+id/button_100"
+           android:layout_width="70dp"
+           android:layout_height="45dp"
+           android:text="100.00"
+           android:background="@drawable/shape_blueborder"/>
+
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="match_parent"
+           android:background="#FFFFFF"/>
+
+       <Button
+           android:id="@+id/button_300"
+           android:layout_width="70dp"
+           android:layout_height="45dp"
+           android:text="300.00"
+           android:background="@drawable/shape_blueborder"/>
+
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="match_parent"
+           android:background="#FFFFFF"/>
+
+       <Button
+           android:id="@+id/button_500"
+           android:layout_width="70dp"
+           android:layout_height="45dp"
+           android:text="500.00"
+           android:background="@drawable/shape_blueborder"/>
+
+   </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView_symbol"
+        android:text="¥"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toRightOf="@+id/textView_symbol"
+        android:layout_margin="16dp"
+        android:paddingLeft="16dp"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_greenborder"
+        android:textSize="30sp"
+        />
+
+    <ListView
+        android:id="@+id/payList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_amount"
+        android:layout_margin="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_toPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payList"
+        android:layout_margin="20dp"
+        android:text="确认支付"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FF9308" />
+
+</RelativeLayout>

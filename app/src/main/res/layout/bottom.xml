@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/colorBar" >
+
+    <LinearLayout
+        android:id="@+id/id_tab_charge"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <ImageButton 
+            android:id="@+id/id_tab_charge_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_charge"
+            android:clickable="false"/>
+        <TextView
+            android:id="@+id/id_tab_charge_text"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="充电"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/id_tab_me"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <ImageButton 
+            android:id="@+id/id_tab_me_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_me_black"
+            android:clickable="false" />
+        <TextView
+            android:id="@+id/id_tab_me_text"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="我的"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

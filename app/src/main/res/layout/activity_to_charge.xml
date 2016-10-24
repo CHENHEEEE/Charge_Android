@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_to_charge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.he.charge.Activities.ToChargeActivity">
+
+    <include layout="@layout/top"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="输入金额"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/include"
+        android:layout_margin="16dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView_symbol"
+        android:text="¥"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="16dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView_symbol"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_greenborder"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BFBFBF"
+        android:layout_below="@id/editText_amount"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="按时长"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/editText_amount"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_margin="16dp"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/numberPicker_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/textView_hour"
+            android:text="小时"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:textSize="24sp"/>
+
+        <NumberPicker
+            android:id="@+id/numberPicker_min"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/textView_min"
+            android:text="分钟"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BFBFBF"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="账户余额"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView_balance"
+        android:text="¥  100.00  元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/textView_toPay"
+        android:text="快速充值   >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/textView_balance"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlue"/>
+
+    <Button
+        android:id="@+id/button_toCharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_toPay"
+        android:layout_margin="16dp"
+        android:text="开始充电"/>
+
+</RelativeLayout>

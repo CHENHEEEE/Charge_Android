@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorBar">
+
+    <ImageButton
+        android:id="@+id/topBack"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_back"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充电"
+        android:textSize="28sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView_download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_sysu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#BFBFBF"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
