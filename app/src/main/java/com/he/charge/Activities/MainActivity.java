@@ -64,13 +64,13 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
                     case 0:
                         resetImg();
                         mChargeImg.setBackgroundResource(R.drawable.ic_charge);
-                        mTopTextView.setText("充电");
+                        //mTopTextView.setText("充电");
                         mChargeText.setTextColor(getResources().getColor(R.color.colorGreen));
                         break;
                     case 1:
                         resetImg();
                         mMeImg.setBackgroundResource(R.drawable.ic_me);
-                        mTopTextView.setText("我的");
+                        //mTopTextView.setText("我的");
                         mMeText.setTextColor(getResources().getColor(R.color.colorGreen));
                         break;
                     default:
@@ -158,7 +158,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
                 resetImg();
                 mViewpager.setCurrentItem(0);
                 mChargeImg.setBackgroundResource(R.drawable.ic_charge);
-                mTopTextView.setText("充电");
+                //mTopTextView.setText("充电");
                 mChargeText.setTextColor(getResources().getColor(R.color.colorGreen));
                 break;
 
@@ -166,7 +166,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
                 resetImg();
                 mViewpager.setCurrentItem(1);
                 mMeImg.setBackgroundResource(R.drawable.ic_me);
-                mTopTextView.setText("我的");
+                //mTopTextView.setText("我的");
                 mMeText.setTextColor(getResources().getColor(R.color.colorGreen));
                 break;
         }
